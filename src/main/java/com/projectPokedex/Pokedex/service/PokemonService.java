@@ -45,8 +45,8 @@ public class PokemonService {
             List<String> abilities = new ArrayList<>();
             String frontImage = responseData.get("sprites").get("front_default").asText();
             String backImage = responseData.get("sprites").get("back_default").asText();
-            String frontAnimatedImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/animated/" + id + ".gif";
-            String backAnimatedImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/animated/" + id + ".gif";
+            String frontAnimatedImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/" + id + ".gif";
+            String backAnimatedImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/" + id + ".gif";
 
             for (JsonNode typeNode : responseData.get("types")) {
                 types.add(typeNode.get("type").get("name").asText());
